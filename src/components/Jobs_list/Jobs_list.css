@@ -1,0 +1,45 @@
+.list {
+  margin: 0 260px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.list__item {
+  background-color: #FFF;
+}
+@media (max-width: 1300px) {
+  .list {
+    margin: 0 220px;
+  }
+}
+@media (max-width: 1200px) {
+  .list {
+    margin: 0 190px;
+  }
+}
+@media (max-width: 1100px) {
+  .list {
+    margin: 0 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .list {
+    margin: 0 100px;
+  }
+}
+@media (max-width: 700px) {
+  .list {
+    margin: 0 60px;
+  }
+}
+@media (max-width: 500px) {
+  .list {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 400px) {
+  .list {
+    margin: 0 10px;
+  }
+}/*# sourceMappingURL=Jobs_list.css.map */

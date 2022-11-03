@@ -1,0 +1,170 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 16px;
+  gap: 32px;
+  background: #FFFFFF;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  &__information {
+    display: flex;
+    gap: 26px;
+  }
+
+  &__image {
+    vertical-align: baseline;
+
+
+    &-pic {
+      border-radius: 50%;
+    }
+  }
+
+  &__rating-inform {
+    display: flex;
+    height: inherit;
+    align-self: stretch;
+    gap: 32px;
+  }
+
+  &__content {
+
+  }
+
+  &__rating {
+    align-self: center;
+    display: flex;
+
+    &-pic {
+      height: 19px;
+      width: 18px;
+    }
+  }
+
+  &__add {
+    flex: 1;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__job {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.625px;
+    color: #3A4562;
+
+
+  }
+
+  &__work {
+
+  }
+
+  &__location {
+    display: flex;
+    gap: 8px;
+
+    &-icon {
+
+      &-pic {
+
+      }
+    }
+
+    &-name {
+
+    }
+
+  }
+}
+
+.additional {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: stretch;
+  justify-content: space-between;
+
+
+  &__bookmark {
+
+    &-pic {
+      height: 20px;
+      width: 16px;
+      margin: auto;
+
+    }
+  }
+
+  &__date {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .item {
+    padding: 20px 12px;
+    gap: 28px;
+    background-color: #EFF0F5;
+  }
+}
+
+@media (max-width: 1100px) {
+  .item {
+    flex-direction: row;
+    gap: 19px;
+
+    &__image {
+      &-pic {
+        height: 66px;
+        width: 66px;
+      }
+    }
+  
+    &__information {
+      flex-direction: column-reverse;
+      gap: 14px;
+    }
+
+    &__rating {
+      &-pic {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  .content {
+    &__job {
+      font-size: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* number of lines to show */
+              line-clamp: 2; 
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .additional {
+    &__bookmark {
+    display: none;
+    }
+
+    &__date {
+      font-size: 14px;
+    }
+  }
+}

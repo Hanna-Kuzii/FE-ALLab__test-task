@@ -1,0 +1,40 @@
+.list {
+	margin: 0 260px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	&__item {
+		background-color: #FFF;
+	}
+
+	@media (max-width: 1300px) {
+		margin: 0 220px;
+	}
+
+	@media (max-width: 1200px) {
+		margin: 0 190px;
+	}
+
+	@media (max-width: 1100px) {
+		margin: 0 150px;
+	}
+
+	@media (max-width: 1000px) {
+		margin: 0 100px;
+	}
+
+	@media (max-width: 700px) {
+		margin: 0 60px;
+	}
+
+	@media (max-width: 500px) {
+		margin: 0 20px;
+	}
+
+	@media (max-width: 400px) {
+		margin: 0 10px;
+	}
+
+}
